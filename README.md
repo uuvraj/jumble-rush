@@ -6,10 +6,14 @@ A responsive, frontend-only Word Scramble (Jumble) web game built with **React**
 
 ## ✨ Features & Mechanics
 
-1. **Word Deck**:
-   - Curated deck of 40+ tech & programming terms with hints, difficulty tiers, and category tags (e.g., `REACT`, `JAVASCRIPT`, `DEPLOY`, `BROWSER`, `COMPONENT`, `TERMINAL`, `KUBERNETES`, `WEBSOCKET`, etc.).
-   - Expandable word deck drawer allowing players to view all terms or add their own custom words with hints stored locally in `localStorage`.
-   - Guaranteed scrambling: The scramble algorithm ensures the scrambled output never matches the original word.
+1. **Multi-Category Vocabulary Decks & Datamuse Integration**:
+   - **8 Curated Categories**: 💻 Tech & Code, 🚀 Space & Cosmos, 🐾 Animals & Nature, 🍕 Food & Culinary, ⚡ Science & Physics, 🏆 Sports & Games, 🌍 World & Travel, and 🎨 Art & Music.
+   - **⚡ Datamuse Live Mode (External API)**: Dynamically fetches relevant vocabulary words with real contextual definitions from the [Datamuse API](https://www.datamuse.com/api/), sanitized and game-formatted with secret word masking in hints.
+   - **💎 Curated Offline Decks**: Hand-crafted, zero-latency curated word lists with in-depth hints for complete offline play and automatic error recovery fallback if the network is unavailable.
+   - **✨ Explore Any Custom Topic**: Interactive topic generator allowing players to type any subject (e.g. *Mythology*, *Dinosaurs*, *Video Games*, *Weather*, *Coffee*) to generate an on-the-fly jumble deck via Datamuse API.
+   - **Local Caching & Refresh**: Smart 12-hour client caching with a one-click "New Batch" refresh button.
+   - **Expandable Word Deck Drawer**: Lets players inspect all terms in the active deck or add their own custom words stored in `localStorage`.
+   - **Guaranteed Scrambling**: Permutation algorithm ensures the scrambled output never matches the original word.
 
 2. **Game State & Scoring**:
    - **Score**: Tracks current score (+10 points per correct answer).
